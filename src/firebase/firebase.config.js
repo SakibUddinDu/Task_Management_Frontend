@@ -4,12 +4,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA7UPYFaBhkaFZ-HSF_gmECZB9_o3YqEXw",
-  authDomain: "tasker-ac1a8.firebaseapp.com",
-  projectId: "tasker-ac1a8",
-  storageBucket: "tasker-ac1a8.appspot.com",
-  messagingSenderId: "977921921563",
-  appId: "1:977921921563:web:d561905bb2cd5833ff9ebe"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
