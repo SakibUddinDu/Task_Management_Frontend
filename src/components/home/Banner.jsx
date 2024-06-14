@@ -1,0 +1,38 @@
+import bannerImage from "../../assets/image/frame.png";
+import { Link } from 'react-router-dom';
+
+
+function Banner() {
+  return (
+    <section className="pb-[84px] md:mt-[100px]">
+      <div className="container lg:px-20">
+        <div className="grid items-center gap-6 md:grid-cols-2">
+          <div className="flex justify-center md:order-2">
+            <img
+              className="max-md:w-full"
+              src={bannerImage}
+              width="326"
+              height="290"
+              alt="frame"
+            />
+          </div>
+          <div>
+            <h1 className="mb-1.5 text-[48px] font-bold leading-none text-[#F5BF42] lg:text-[64px]">
+              Tasker
+            </h1>
+            <p className="text-lg my-2 opacity-60">
+              Effortlessly Organize, Prioritize, and Conquer Tasks with Tasker -
+              Your Personal Productivity Ally for Seamless Goal Achievement and
+              Stress-Free Task Management.
+            </p>
+            <Link to="/dashboard">
+              <button className="btn btn-warning">Explore Now</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Banner;
